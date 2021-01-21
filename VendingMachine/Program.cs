@@ -7,12 +7,15 @@ namespace VendingMachine
     class Program
     {
 
+        // Exercise 01 - Vending Machine
+        // Shawn Hopkins shawn.hopkins1@gmail.com
+
         static void Main(string[] args)
         {
             // Access app configuration from appsettings.json
             var config = Settings().Build();
 
-            var paymentProcessor = new PaymentProcessor(int.Parse(config["CostOfSoda"]));
+            var paymentProcessor = new VendingMachine(int.Parse(config["CostOfSoda"]));
 
             Console.WriteLine("Welcome to the .NET Soda vending machine");
             Console.Write($"Please insert {paymentProcessor.CostOfSoda} cents: ");

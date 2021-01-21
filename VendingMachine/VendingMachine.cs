@@ -2,11 +2,11 @@
 
 namespace VendingMachine
 {
-    public class PaymentProcessor
+    public class VendingMachine
     {
         private int amountSpent;
 
-        public PaymentProcessor(int costOfSoda,int amountSpent = 0)
+        public VendingMachine(int costOfSoda,int amountSpent = 0)
         {
             CostOfSoda = costOfSoda;
             AmountSpent = amountSpent;
